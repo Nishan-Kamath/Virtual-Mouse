@@ -65,10 +65,7 @@ while cap.isOpened():
             if distance < 0.05:
                 pyautogui.click()
 
-    # Display the frame with OpenCV
     cv2.imshow("Virtual AI Mouse", frame)
-
-    # Exit on 'q' key press
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
